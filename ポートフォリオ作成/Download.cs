@@ -36,7 +36,7 @@ namespace ポートフォリオ作成
             {
                 case ButtonState1.Action1:
                     // Action1の処理
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\ポートフォリオ.png");
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\ポートフォリオ.png");
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label2.Visible = true; // label2を表示する
                     buttonState1 = ButtonState1.Action2; // 次の状態に遷移
@@ -48,7 +48,7 @@ namespace ポートフォリオ作成
                     break;
                 case ButtonState1.Action3:
                     // Action3の処理
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\URL貼り付け.png");
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\URL貼り付け.png");
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label4.Visible = true;
                     buttonState1 = ButtonState1.Action4; // 次の状態に遷移
@@ -72,7 +72,7 @@ namespace ポートフォリオ作成
                     label5.Visible = false;
                     label6.Visible = false;
                     label7.Visible = true;
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\更新.png");
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\更新.png");
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     buttonState1 = ButtonState1.Action7; // 次の状態に遷移
                     break;
@@ -106,37 +106,37 @@ namespace ポートフォリオ作成
                     break;
                 case ButtonState1.Action2:
                     // Action2のView更新処理
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\ポートフォリオ.png");
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\ポートフォリオ.png");
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label2.Visible = true;
                     break;
                 case ButtonState1.Action3:
                     // Action3のView更新処理
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\URL貼り付け.png");
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\URL貼り付け.png");
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label3.Visible = true;
                     break;
                 case ButtonState1.Action4:
                     // Action4のView更新処理
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\URL貼り付け.png");
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\URL貼り付け.png");
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label4.Visible = true;
                     break;
                 case ButtonState1.Action5:
                     // Action5のView更新処理
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\URL貼り付け.png");
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\URL貼り付け.png");
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label5.Visible = true;
                     break;
                 case ButtonState1.Action6:
                     // Action6のView更新処理
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\URL貼り付け.png");
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\URL貼り付け.png");
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label6.Visible = true;
                     break;
                 case ButtonState1.Action7:
                     // Action7のView更新処理
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\更新.png");
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\更新.png");
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label7.Visible = true;
                     button1.Enabled = false; 
