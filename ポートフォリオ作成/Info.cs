@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Collections.Generic;
 namespace ポートフォリオ作成
 {
     public partial class Info : Form
@@ -40,8 +41,11 @@ namespace ポートフォリオ作成
             Info20
         }
         private ButtonState buttonState = ButtonState.Info1;
+        private Stack<ButtonState> stateHistory = new Stack<ButtonState>();
         private void button1_Click(object sender, EventArgs e)
         {
+            stateHistory.Push(buttonState); // 履歴に現在の状態を追加
+
             switch (buttonState)
             {
                 case ButtonState.Info1:
@@ -182,9 +186,159 @@ namespace ポートフォリオ作成
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label21.Visible = true;
                     button1.Enabled = false; // ボタンを無効にする
+                    button2.Enabled = true;  // ボタンを有効にする
                     break;
-                
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            button2.Enabled = false; // ボタンを無効にする
+            Download download = new Download();
+            download.FormClosed += (s,args) => button2.Enabled = true;
+            download.Show();
+        }
+
+        private void UpdateView()
+        {
+            // すべてのラベル・画像を非表示/初期化
+            label1.Visible = false;
+            label2.Visible = false;
+            label3.Visible = false;
+            label4.Visible = false;
+            label5.Visible = false;
+            label6.Visible = false;
+            label7.Visible = false;
+            label8.Visible = false;
+            label9.Visible = false;
+            label10.Visible = false;
+            label11.Visible = false;
+            label12.Visible = false;
+            label13.Visible = false;
+            label14.Visible = false;
+            label15.Visible = false;
+            label16.Visible = false;
+            label17.Visible = false;
+            label18.Visible = false;
+            label19.Visible = false;
+            label20.Visible = false;
+            label21.Visible = false;
+            pictureBox1.Image = null;
+
+            switch (buttonState)
+            {
+                case ButtonState.Info1:
+                    // 初期状態
+                    label1.Visible = true;
+                    break;
+                case ButtonState.Info2:
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\Git作成.png");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    label2.Visible = true;
+                    break;
+                case ButtonState.Info3:
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\Git作成パス.png");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    label3.Visible = true;
+                    break;
+                case ButtonState.Info4:
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\Git作成パス.png");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    label4.Visible = true;
+                    break;
+                case ButtonState.Info5:
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\Git作成パス.png");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    label5.Visible = true;
+                    break;
+                case ButtonState.Info6:
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\Git作成パス.png");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    label6.Visible = true;
+                    break;
+                case ButtonState.Info7:
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\Git作成パス.png");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    label7.Visible = true;
+                    break;
+                case ButtonState.Info8:
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\Git作成パス.png");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    label8.Visible = true;
+                    break;
+                case ButtonState.Info9:
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\Git作成パス.png");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    label9.Visible = true;
+                    break;
+                case ButtonState.Info10:
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\WebGitホーム.png");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    label10.Visible = true;
+                    break;
+                case ButtonState.Info11:
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\WebGitホーム.png");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    label11.Visible = true;
+                    break;
+                case ButtonState.Info12:
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\ポートフォリオ.png");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    label12.Visible = true;
+                    break;
+                case ButtonState.Info13:
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\GitURL.png");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    label13.Visible = true;
+                    break;
+                case ButtonState.Info14:
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\クローン.png");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    label14.Visible = true;
+                    break;
+                case ButtonState.Info15:
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\クローン.png");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    label15.Visible = true;
+                    break;
+                case ButtonState.Info16:
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\クローン.png");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    label16.Visible = true;
+                    break;
+                case ButtonState.Info17:
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\クローン.png");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    label17.Visible = true;
+                    break;
+                case ButtonState.Info18:
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\Git変更.png");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    label18.Visible = true;
+                    break;
+                case ButtonState.Info19:
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\Git変更コメント.png");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    label19.Visible = true;
+                    break;
+                case ButtonState.Info20:
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\プルと同期.png");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    label20.Visible = true;
+                    break;
+            }
+        }
+
+        // 戻るボタン
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if(stateHistory.Count > 0)
+            {
+                buttonState = stateHistory.Pop();
+                UpdateView();
+                button1.Enabled = true; 
+            }
+            
         }
     }
 }

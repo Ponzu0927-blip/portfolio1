@@ -51,6 +51,8 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,9 +67,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Location = new System.Drawing.Point(585, 362);
+            this.button1.Location = new System.Drawing.Point(566, 362);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(203, 76);
+            this.button1.Size = new System.Drawing.Size(107, 76);
             this.button1.TabIndex = 1;
             this.button1.Text = "次へ";
             this.button1.UseVisualStyleBackColor = true;
@@ -285,11 +287,35 @@
             this.label21.Text = "㉕WebのGitHubでページを更新後、何を追加したのか、何を作ったのかなどのコメントが更新されていればOK";
             this.label21.Visible = false;
             // 
+            // button2
+            // 
+            this.button2.Enabled = false;
+            this.button2.Font = new System.Drawing.Font("MS UI Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button2.Location = new System.Drawing.Point(679, 363);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(109, 75);
+            this.button2.TabIndex = 23;
+            this.button2.Text = "他のパソコンで作業したい場合";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(12, 13);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(47, 42);
+            this.button3.TabIndex = 24;
+            this.button3.Text = "←";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
@@ -345,5 +371,7 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
