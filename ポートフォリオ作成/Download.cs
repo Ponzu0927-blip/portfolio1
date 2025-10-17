@@ -79,7 +79,7 @@ namespace ポートフォリオ作成
                 case ButtonState1.Action7:
                     // Action7の処理
                     label8.Visible = true;
-                    button1.Enabled = false; // ボタンを無効化してこれ以上クリックできないようにする
+                    button1.Enabled = false; // 進むボタンを無効化
                     break;
             }
         }
@@ -96,9 +96,10 @@ namespace ポートフォリオ作成
             label8.Visible = false;
             pictureBox1.Image = null;
 
-            switch(buttonState1)
+            button1.Enabled = true; // 進むボタンを有効化
+
+            switch (buttonState1)
             {
-                 
                 case ButtonState1.Action1:
                     // Action1のView更新処理
                     label1.Visible = true; 
@@ -108,37 +109,36 @@ namespace ポートフォリオ作成
                     pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\ポートフォリオ.png");
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label2.Visible = true;
-                    label3.Visible = true;
                     break;
                 case ButtonState1.Action3:
                     // Action3のView更新処理
                     pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\URL貼り付け.png");
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                    label4.Visible = true;
+                    label3.Visible = true;
                     break;
                 case ButtonState1.Action4:
                     // Action4のView更新処理
                     pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\URL貼り付け.png");
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                    label5.Visible = true;
+                    label4.Visible = true;
                     break;
                 case ButtonState1.Action5:
                     // Action5のView更新処理
                     pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\URL貼り付け.png");
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                    label6.Visible = true;
+                    label5.Visible = true;
                     break;
                 case ButtonState1.Action6:
                     // Action6のView更新処理
                     pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\URL貼り付け.png");
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                    label7.Visible = true;
+                    label6.Visible = true;
                     break;
                 case ButtonState1.Action7:
                     // Action7のView更新処理
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\URL貼り付け.png");
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明\\ポートフォリオ作成\\更新.png");
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                    label8.Visible = true;
+                    label7.Visible = true;
                     button1.Enabled = false; 
                     break;
             }
@@ -150,7 +150,7 @@ namespace ポートフォリオ作成
             {
                 buttonState1 = historyStack1.Pop(); // 履歴スタックから前の状態を取得
                 UpdateView(); // Viewを更新
-                button1.Enabled = true; // 戻るボタンが押された場合、進むボタンを有効化
+                button1.Enabled = true; // 進むボタンを有効化
             }
         }
     }
