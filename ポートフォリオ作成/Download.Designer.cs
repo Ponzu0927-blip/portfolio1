@@ -39,6 +39,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,7 +66,7 @@
             this.label2.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label2.Location = new System.Drawing.Point(820, 105);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(271, 34);
+            this.label2.Size = new System.Drawing.Size(263, 33);
             this.label2.TabIndex = 4;
             this.label2.Text = "②<>Codeをクリック";
             this.label2.Visible = false;
@@ -76,7 +77,7 @@
             this.label3.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label3.Location = new System.Drawing.Point(820, 152);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(213, 34);
+            this.label3.Size = new System.Drawing.Size(207, 33);
             this.label3.TabIndex = 5;
             this.label3.Text = "③URLをコピー";
             this.label3.Visible = false;
@@ -117,7 +118,7 @@
             this.button1.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button1.Location = new System.Drawing.Point(817, 644);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(481, 93);
+            this.button1.Size = new System.Drawing.Size(238, 93);
             this.button1.TabIndex = 9;
             this.button1.Text = "次へ";
             this.button1.UseVisualStyleBackColor = true;
@@ -153,11 +154,23 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button3.Location = new System.Drawing.Point(1079, 644);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(219, 93);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "READMEの書き方";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Download
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1310, 749);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -190,5 +203,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

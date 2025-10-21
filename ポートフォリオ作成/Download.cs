@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace ポートフォリオ作成
 {
@@ -152,6 +153,11 @@ namespace ポートフォリオ作成
                 UpdateView(); // Viewを更新
                 button1.Enabled = true; // 進むボタンを有効化
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://icarry.jp/pf-technic/");
         }
     }
 }
