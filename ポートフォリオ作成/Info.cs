@@ -49,14 +49,16 @@ namespace ポートフォリオ作成
             {
                 case ButtonState.Info1:
                     // Action1の処理
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\Git作成.png");
+                    pictureBox1.Image = Image.FromFile(
+    　　　　　　　　Path.Combine(Application.StartupPath,  "ポートフォリオ作成", "Git作成.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label2.Visible = true; // label2を表示する
                     buttonState = ButtonState.Info2; // 次の状態に遷移
                     break;
                 case ButtonState.Info2:
                     // Action2の処理
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\Git作成パス.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "Git作成パス.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label3.Visible = true;
                     buttonState = ButtonState.Info3; // 次の状態に遷移
@@ -99,7 +101,8 @@ namespace ポートフォリオ作成
                     break;
                 case ButtonState.Info9:
                     // Action9の処理
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\WebGitホーム.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "WebGitホーム.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label7.Visible = false;
                     label8.Visible = false;
@@ -114,21 +117,24 @@ namespace ポートフォリオ作成
                     break;
                 case ButtonState.Info11:
                     // Action11の処理
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\ポートフォリオ.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "ポートフォリオ.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label12.Visible = true;
                     buttonState = ButtonState.Info12; // 次の状態に遷移
                     break;
                 case ButtonState.Info12:
                     // Action12の処理
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\GitURL.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "GitURL.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label13.Visible = true;
                     buttonState = ButtonState.Info13; // 次の状態に遷移
                     break;
                 case ButtonState.Info13:
                     // Action13の処理
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\クローン.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "クローン.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label14.Visible = true;
                     buttonState = ButtonState.Info14; // 次の状態に遷移
@@ -156,21 +162,24 @@ namespace ポートフォリオ作成
                     break;
                 case ButtonState.Info17:
                     // Action17の処理
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\Git変更.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "Git変更.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label18.Visible = true;
                     buttonState = ButtonState.Info18; // 次の状態に遷移
                     break;
                 case ButtonState.Info18:
                     // Action18の処理
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\Git変更コメント.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "Git変更コメント.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label19.Visible = true;
                     buttonState = ButtonState.Info19; // 次の状態に遷移
                     break;
                 case ButtonState.Info19:
                     // Action19の処理
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\プルと同期.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "プルと同期.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label16.Visible = false;
                     label17.Visible = false;
@@ -181,7 +190,8 @@ namespace ポートフォリオ作成
                     break;
                 case ButtonState.Info20:
                     // Action20の処理
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\追加後.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "追加後.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label21.Visible = true;
                     button1.Enabled = false; // ボタンを無効にする
@@ -231,97 +241,116 @@ namespace ポートフォリオ作成
                     label1.Visible = true;
                     break;
                 case ButtonState.Info2:
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\Git作成.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "Git作成.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label2.Visible = true;
                     break;
                 case ButtonState.Info3:
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\Git作成パス.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "Git作成パス.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label3.Visible = true;
                     break;
                 case ButtonState.Info4:
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\Git作成パス.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "Git作成パス.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label4.Visible = true;
                     break;
                 case ButtonState.Info5:
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\Git作成パス.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "Git作成パス.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label5.Visible = true;
                     break;
                 case ButtonState.Info6:
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\Git作成パス.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "Git作成パス.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label6.Visible = true;
                     break;
                 case ButtonState.Info7:
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\Git作成パス.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "Git作成パス.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label7.Visible = true;
                     break;
                 case ButtonState.Info8:
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\Git作成パス.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "Git作成パス.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label8.Visible = true;
                     break;
                 case ButtonState.Info9:
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\Git作成パス.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "Git作成パス.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label9.Visible = true;
                     break;
                 case ButtonState.Info10:
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\WebGitホーム.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "WebGitホーム.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label10.Visible = true;
                     break;
                 case ButtonState.Info11:
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\WebGitホーム.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "WebGitホーム.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label11.Visible = true;
                     break;
                 case ButtonState.Info12:
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\ポートフォリオ.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "ポートフォリオ.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label12.Visible = true;
                     break;
                 case ButtonState.Info13:
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\GitURL.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "GitURL.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label13.Visible = true;
                     break;
                 case ButtonState.Info14:
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\クローン.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "クローン.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label14.Visible = true;
                     break;
                 case ButtonState.Info15:
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\クローン.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "クローン.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label15.Visible = true;
                     break;
                 case ButtonState.Info16:
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\クローン.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "クローン.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label16.Visible = true;
                     break;
                 case ButtonState.Info17:
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\クローン.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "クローン.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label17.Visible = true;
                     break;
                 case ButtonState.Info18:
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\Git変更.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "Git変更.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label18.Visible = true;
                     break;
                 case ButtonState.Info19:
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\Git変更コメント.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "Git変更コメント.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label19.Visible = true;
                     break;
                 case ButtonState.Info20:
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\csharp\\Desktop\\ポートフォリオ説明発表用\\ポートフォリオ作成\\プルと同期.png");
+                    pictureBox1.Image = Image.FromFile(
+                    Path.Combine(Application.StartupPath, "ポートフォリオ作成", "プルと同期.png"));
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     label20.Visible = true;
                     break;
